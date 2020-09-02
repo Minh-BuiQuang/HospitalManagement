@@ -1,0 +1,48 @@
+c:\users\lvinhbb\documents\visual studio 10\Projects\QLBV\QLBV\bin\QLBV.dll
+c:\users\lvinhbb\documents\visual studio 10\Projects\QLBV\QLBV\bin\QLBV.pdb
+c:\users\lvinhbb\documents\visual studio 10\Projects\QLBV\QLBV\obj\Debug\ResolveAssemblyReference.cache
+c:\users\lvinhbb\documents\visual studio 10\Projects\QLBV\QLBV\obj\Debug\QLBV.dll
+c:\users\lvinhbb\documents\visual studio 10\Projects\QLBV\QLBV\obj\Debug\QLBV.pdb
+E:\QLBV\QLBV\bin\QLBV.dll
+E:\QLBV\QLBV\bin\QLBV.pdb
+E:\QLBV\QLBV\obj\Debug\ResolveAssemblyReference.cache
+E:\QLBV\QLBV\obj\Debug\QLBV.dll
+E:\QLBV\QLBV\obj\Debug\QLBV.pdb
+E:\Studying\QLBV\QLBV\bin\QLBV.dll
+E:\Studying\QLBV\QLBV\bin\QLBV.pdb
+E:\Studying\QLBV\QLBV\obj\Debug\ResolveAssemblyReference.cache
+E:\Studying\QLBV\QLBV\obj\Debug\QLBV.dll
+E:\Studying\QLBV\QLBV\obj\Debug\QLBV.pdb
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\QLBV\QLBV\bin\QLBV.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\QLBV\QLBV\bin\QLBV.pdb
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\QLBV\QLBV\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\QLBV\QLBV\obj\Debug\QLBV.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\QLBV\QLBV\obj\Debug\QLBV.pdb
+E:\Studying\quan-ly-benh-vien-sieu-trum\QLBV\bin\QLBV.dll
+E:\Studying\quan-ly-benh-vien-sieu-trum\QLBV\bin\QLBV.pdb
+E:\Studying\quan-ly-benh-vien-sieu-trum\QLBV\obj\Debug\ResolveAssemblyReference.cache
+E:\Studying\quan-ly-benh-vien-sieu-trum\QLBV\obj\Debug\QLBV.dll
+E:\Studying\quan-ly-benh-vien-sieu-trum\QLBV\obj\Debug\QLBV.pdb
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\QLBV.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\QLBV.pdb
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\AjaxControlToolkit.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\AjaxControlToolkit.pdb
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\obj\Debug\QLBV.dll
+C:\Users\Hit\Documents\Visual Studio 2010\Projects\ Web_QLBV\QLBV\obj\Debug\QLBV.pdb

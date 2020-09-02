@@ -1,0 +1,159 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="QLBV.SiteMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Styles/ddsmoothmenu.css" />
+
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.js"></script>    
+    <script type="text/javascript" src="Scripts/ddsmoothmenu.js"></script>
+    <script type="text/javascript">
+        ddsmoothmenu.init({
+            mainmenuid: "smoothmenu1", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+        ddsmoothmenu.init({
+            mainmenuid: "smoothmenu2", //Menu DIV id
+            orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+            //customtheme: ["#804000", "#482400"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="Form1" runat="server">
+<div class="page id="page1">
+   
+    
+    <table>
+        <tr>
+            <td valign="top" rowspan="2">
+                <div class="leftCol">
+                    <div id="profile-links" style="padding-left:2px">
+                    <center>
+                        <a href="Login_succeed.aspx">
+                            <img src="Source/logo.jpg" alt="Logo" width="190px" height="190px" />
+                        </a>
+                    </center>
+                        <br /><br /><br />
+                        Chào :
+                        <asp:Label ID="lb_fullName" runat="server"></asp:Label>
+                        <br />
+                        <asp:HyperLink ID="lkb_fullName" NavigateUrl="~/TaiKhoan_QuanLy.aspx" runat="server" Visible="false" Text="Quản lý user"></asp:HyperLink>
+                        <br />                    
+                        <asp:LinkButton ID="lkb_logout" runat="server" OnClick="LinkButtonLogout_Click" Text="Thoát"></asp:LinkButton>
+                        <br />
+                    </div>
+                    <br />  
+                    <asp:ContentPlaceHolder ID="LeftContent" runat="server"/>
+                </div>
+            </td>
+            <td valign="top">
+                 <div id="smoothmenu1" class="ddsmoothmenu">
+                    <ul>
+                        <li>
+                            <a href="#">Hồ sơ</a>
+                            <ul>
+                                <li><a href="HoSo_DS_ThongTinBenhNhan.aspx">Thông tin bệnh nhân</a></li>
+                                <li><a href="HoSo_HoSoCapCuu_DS.aspx">Cấp cứu/Ngoại chuẩn</a></li>
+                                <li><a href="HoSo_HoSoBenhAn_HoSo.aspx">Bệnh án</a></li>
+                            </ul>    
+                        </li>
+                        <li>
+                            <a id="DanhMuc" runat="server" href="#">Danh mục</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Cận lâm sàn</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Siêu âm</a>
+                                            <ul>
+                                                <li><a id="SieuAm" runat="server" href="DanhMuc_CanLamSan_SieuAm_PhanLoai.aspx">Phân loại</a></li>
+                                                <li><a href="DanhMuc_CanLamSan_SieuAm_ChiTieu.aspx">Chỉ tiêu</a></li>
+                                                <li><a href="DanhMuc_CanLamSan_SieuAm_KetQua_BenhNhan.aspx">Kết quả</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Xét nghiệm</a>
+                                            <ul>
+                                                <li><a id="XetNghiem" runat="server" href="DanhMuc_CanLamSan_XetNghiem_PhanLoai.aspx">Phân loại</a></li>
+                                                <li><a href="DanhMuc_CanLamSan_XetNghiem_ChiTieu.aspx">Chỉ tiêu</a></li>
+                                                <li><a href="DanhMuc_CanLamSan_XetNghiem_KetQua_BenhNhan.aspx">Kết quả</a></li>
+                                            </ul>    
+                                        </li>
+                                        <li>
+                                            <a href="#">X-quang</a>
+                                            <ul>
+                                                <li><a id="XQuang" runat="server" href="DanhMuc_CanLamSan_XQuang_PhanLoai.aspx">Phân loại</a></li>
+                                                <li><a href="DanhMuc_CanLamSan_XQuang_ChiTieu.aspx">Chỉ tiêu</a></li>
+                                                <li><a href="DanhMuc_CanLamSan_XQuang_KetQua_BenhNhan.aspx">Kết quả</a></li>
+                                            </ul> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="DanhMuc_Loaibenh.aspx">Loại bệnh</a></li>
+                                <li><a href="DanhMuc_Benh.aspx">Bệnh</a></li>
+                                <li><a href="DanhMuc_Loaithuoc.aspx">Loại thuốc</a></li>
+                                <li><a href="DanhMuc_Thuoc.aspx">Thuốc</a></li>
+                                <li><a href="DanhMuc_Dichtruyen.aspx">Dịch truyền</a></li>
+                                <li><a href="DanhMuc_Tiemchung.aspx">Loại tiêm chủng</a></li>
+                                <li><a href="DanhMuc_CongNhanVien.aspx">Công nhân viên</a></li>
+                                <li><a href="DanhMuc_Danhsachbenhvien.aspx">Bệnh viện</a></li>
+                                <li><a href="DanhMuc_Loaithuthuat.aspx">Loại thủ thuật</a></li>
+                                <li><a href="DanhMuc_Thuthuat.aspx">Thủ thuật</a></li>
+                                <li><a href="DanhMuc_Loaiphauthuat.aspx">Loại phẫu thuật</a></li>
+                                <li><a href="DanhMuc_Phauthuat.aspx">Phẫu thuật</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tìm kiếm</a>
+                            <ul>
+                                <li><a href="Search_HoSoBenhAn.aspx">Hồ sơ bệnh án</a></li>
+                                <li><a href="Search_BenhNhan.aspx">Bệnh nhân</a></li>
+                                <li><a href="Search_CongNhanVien.aspx">Công nhân viên</a></li>
+                            </ul>
+                        </li>
+                        <li id="ThongKe" runat="server"><a href="#">Thống kê</a>
+                            <ul>
+                                <li><a href="ThongKeBenhNhan.aspx">Danh sách bệnh nhân nhập xuất viện</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br style="clear: left" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:90%" valign="top">
+                <div class="main">
+                    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePartialRendering="true" AsyncPostBackTimeout="360000">
+                    </asp:ToolkitScriptManager>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+        
+    <div class="clear">
+        </div>
+        
+    <div class="footer">
+        <a style="font-size:10px">Quản lý bệnh viện</a>
+    </div>
+</div>
+</form>
+</body>
+</html>

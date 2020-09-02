@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6C747F2-1892-480B-BEC4-D63F6F44D0E2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLBV</RootNamespace>
+    <AssemblyName>QLBV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50401.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\softwares &amp; cracks\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DanhMuc_Benh.aspx" />
+    <Content Include="DanhMuc_CanLamSan_SieuAm_ChiTieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_SieuAm_KetQua_BenhNhan.aspx" />
+    <Content Include="DanhMuc_CanLamSan_SieuAm_KetQua_DSPhieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_SieuAm_KetQua_Phieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_SieuAm_PhanLoai.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XetNghiem_ChiTieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XetNghiem_KetQua_BenhNhan.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XetNghiem_KetQua_DSPhieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XetNghiem_KetQua_Phieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XetNghiem_PhanLoai.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XQuang_ChiTieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XQuang_KetQua_BenhNhan.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XQuang_KetQua_DSPhieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XQuang_KetQua_Phieu.aspx" />
+    <Content Include="DanhMuc_CanLamSan_XQuang_PhanLoai.aspx" />
+    <Content Include="DanhMuc_CongNhanVien.aspx" />
+    <Content Include="DanhMuc_Danhsachbenhvien.aspx" />
+    <Content Include="DanhMuc_Dichtruyen.aspx" />
+    <Content Include="DanhMuc_Loaibenh.aspx" />
+    <Content Include="DanhMuc_Loaiphauthuat.aspx" />
+    <Content Include="DanhMuc_Loaithuoc.aspx" />
+    <Content Include="DanhMuc_Loaithuthuat.aspx" />
+    <Content Include="DanhMuc_Phauthuat.aspx" />
+    <Content Include="DanhMuc_Thuoc.aspx" />
+    <Content Include="DanhMuc_Thuthuat.aspx" />
+    <Content Include="DanhMuc_Tiemchung.aspx" />
+    <Content Include="GiayRaVien.aspx" />
+    <Content Include="HoSo_ChiTietTTBN.aspx" />
+    <Content Include="HoSo_DS_ThongTinBenhNhan.aspx" />
+    <Content Include="HoSo_HoSoBenhAn_HoSo.aspx" />
+    <Content Include="HoSo_HoSoBenhAn_VaoVien.aspx" />
+    <Content Include="HoSo_HoSoCapCuu_ChiTiet.aspx" />
+    <Content Include="HoSo_HoSoCapCuu_DS.aspx" />
+    <Content Include="HoSo_HoSoCapCuu_HanhChinh.aspx" />
+    <Content Include="HoSo_HoSoCapCuu_KhamBenh.aspx" />
+    <Content Include="InGiay.aspx" />
+    <Content Include="Load_Image.aspx" />
+    <Content Include="Login_succeed.aspx" />
+    <Content Include="Scripts\jquery.datepick.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="Scripts\ddsmoothmenu.js" />
+    <Content Include="Scripts\jquery-latest.js" />
+    <Content Include="Search_BenhNhan.aspx" />
+    <Content Include="Search_CongNhanVien.aspx" />
+    <Content Include="Search_HoSoBenhAn.aspx" />
+    <Content Include="Source\down.gif" />
+    <Content Include="Source\right.gif" />
+    <Content Include="Styles\ddsmoothmenu-v.css" />
+    <Content Include="Styles\ddsmoothmenu.css" />
+    <Content Include="Styles\jquery.datepick.css" />
+    <Content Include="Styles\Menu.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="TaiKhoan_QuanLy.aspx" />
+    <Content Include="testdatepicker.aspx" />
+    <Content Include="ThongKeBenhNhan.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="XemHSBA.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport\DanhSachBenhNhanNhapXuatVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DanhSachBenhNhanNhapXuatVien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\Giayravien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Giayravien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\HoSoBenhAn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoSoBenhAn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Benh.aspx.cs">
+      <DependentUpon>DanhMuc_Benh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Benh.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Benh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_ChiTieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_ChiTieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_ChiTieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_ChiTieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_KetQua_BenhNhan.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_KetQua_BenhNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_KetQua_BenhNhan.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_KetQua_BenhNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_KetQua_DSPhieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_KetQua_DSPhieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_KetQua_DSPhieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_KetQua_DSPhieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_KetQua_Phieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_KetQua_Phieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_KetQua_Phieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_KetQua_Phieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_PhanLoai.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_PhanLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_SieuAm_PhanLoai.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_SieuAm_PhanLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_ChiTieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_ChiTieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_ChiTieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_ChiTieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_KetQua_BenhNhan.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_KetQua_BenhNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_KetQua_BenhNhan.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_KetQua_BenhNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_KetQua_DSPhieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_KetQua_DSPhieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_KetQua_DSPhieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_KetQua_DSPhieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_KetQua_Phieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_KetQua_Phieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_KetQua_Phieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_KetQua_Phieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_PhanLoai.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_PhanLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XetNghiem_PhanLoai.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XetNghiem_PhanLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_ChiTieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_ChiTieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_ChiTieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_ChiTieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_KetQua_BenhNhan.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_KetQua_BenhNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_KetQua_BenhNhan.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_KetQua_BenhNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_KetQua_DSPhieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_KetQua_DSPhieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_KetQua_DSPhieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_KetQua_DSPhieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_KetQua_Phieu.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_KetQua_Phieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_KetQua_Phieu.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_KetQua_Phieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_PhanLoai.aspx.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_PhanLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CanLamSan_XQuang_PhanLoai.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CanLamSan_XQuang_PhanLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_CongNhanVien.aspx.cs">
+      <DependentUpon>DanhMuc_CongNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_CongNhanVien.aspx.designer.cs">
+      <DependentUpon>DanhMuc_CongNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Danhsachbenhvien.aspx.cs">
+      <DependentUpon>DanhMuc_Danhsachbenhvien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Danhsachbenhvien.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Danhsachbenhvien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Dichtruyen.aspx.cs">
+      <DependentUpon>DanhMuc_Dichtruyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Dichtruyen.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Dichtruyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Loaibenh.aspx.cs">
+      <DependentUpon>DanhMuc_Loaibenh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Loaibenh.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Loaibenh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Loaiphauthuat.aspx.cs">
+      <DependentUpon>DanhMuc_Loaiphauthuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Loaiphauthuat.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Loaiphauthuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Loaithuoc.aspx.cs">
+      <DependentUpon>DanhMuc_Loaithuoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Loaithuoc.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Loaithuoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Loaithuthuat.aspx.cs">
+      <DependentUpon>DanhMuc_Loaithuthuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Loaithuthuat.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Loaithuthuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Phauthuat.aspx.cs">
+      <DependentUpon>DanhMuc_Phauthuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Phauthuat.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Phauthuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Thuoc.aspx.cs">
+      <DependentUpon>DanhMuc_Thuoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Thuoc.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Thuoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Thuthuat.aspx.cs">
+      <DependentUpon>DanhMuc_Thuthuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Thuthuat.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Thuthuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc_Tiemchung.aspx.cs">
+      <DependentUpon>DanhMuc_Tiemchung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMuc_Tiemchung.aspx.designer.cs">
+      <DependentUpon>DanhMuc_Tiemchung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\DataSet1.designer.cs">
+      <DependentUpon>DataSet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DB_WebBenhVienDataSet.Designer.cs" />
+    <Compile Include="Dataset\DB_WebBenhVienDataSet1.Designer.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiayRaVien.aspx.cs">
+      <DependentUpon>GiayRaVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiayRaVien.aspx.designer.cs">
+      <DependentUpon>GiayRaVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_ChiTietTTBN.aspx.cs">
+      <DependentUpon>HoSo_ChiTietTTBN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_ChiTietTTBN.aspx.designer.cs">
+      <DependentUpon>HoSo_ChiTietTTBN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_DS_ThongTinBenhNhan.aspx.cs">
+      <DependentUpon>HoSo_DS_ThongTinBenhNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_DS_ThongTinBenhNhan.aspx.designer.cs">
+      <DependentUpon>HoSo_DS_ThongTinBenhNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_HoSoBenhAn_HoSo.aspx.cs">
+      <DependentUpon>HoSo_HoSoBenhAn_HoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_HoSoBenhAn_HoSo.aspx.designer.cs">
+      <DependentUpon>HoSo_HoSoBenhAn_HoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_HoSoBenhAn_VaoVien.aspx.cs">
+      <DependentUpon>HoSo_HoSoBenhAn_VaoVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_HoSoBenhAn_VaoVien.aspx.designer.cs">
+      <DependentUpon>HoSo_HoSoBenhAn_VaoVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_ChiTiet.aspx.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_ChiTiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_ChiTiet.aspx.designer.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_ChiTiet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_DS.aspx.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_DS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_DS.aspx.designer.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_DS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_HanhChinh.aspx.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_HanhChinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_HanhChinh.aspx.designer.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_HanhChinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_KhamBenh.aspx.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_KhamBenh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSo_HoSoCapCuu_KhamBenh.aspx.designer.cs">
+      <DependentUpon>HoSo_HoSoCapCuu_KhamBenh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InGiay.aspx.cs">
+      <DependentUpon>InGiay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InGiay.aspx.designer.cs">
+      <DependentUpon>InGiay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Load_Image.aspx.cs">
+      <DependentUpon>Load_Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Load_Image.aspx.designer.cs">
+      <DependentUpon>Load_Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login_succeed.aspx.cs">
+      <DependentUpon>Login_succeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login_succeed.aspx.designer.cs">
+      <DependentUpon>Login_succeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_BenhNhan.aspx.cs">
+      <DependentUpon>Search_BenhNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search_BenhNhan.aspx.designer.cs">
+      <DependentUpon>Search_BenhNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search_CongNhanVien.aspx.cs">
+      <DependentUpon>Search_CongNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search_CongNhanVien.aspx.designer.cs">
+      <DependentUpon>Search_CongNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search_HoSoBenhAn.aspx.cs">
+      <DependentUpon>Search_HoSoBenhAn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search_HoSoBenhAn.aspx.designer.cs">
+      <DependentUpon>Search_HoSoBenhAn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan_QuanLy.aspx.cs">
+      <DependentUpon>TaiKhoan_QuanLy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan_QuanLy.aspx.designer.cs">
+      <DependentUpon>TaiKhoan_QuanLy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testdatepicker.aspx.cs">
+      <DependentUpon>testdatepicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testdatepicker.aspx.designer.cs">
+      <DependentUpon>testdatepicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeBenhNhan.aspx.cs">
+      <DependentUpon>ThongKeBenhNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThongKeBenhNhan.aspx.designer.cs">
+      <DependentUpon>ThongKeBenhNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToolkitScriptManager.cs" />
+    <Compile Include="XemHSBA.aspx.cs">
+      <DependentUpon>XemHSBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XemHSBA.aspx.designer.cs">
+      <DependentUpon>XemHSBA.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dataset\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet1.xsd" />
+    <None Include="Dataset\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DB_WebBenhVienDataSet.xsc">
+      <DependentUpon>DB_WebBenhVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DB_WebBenhVienDataSet.xsd" />
+    <None Include="Dataset\DB_WebBenhVienDataSet.xss">
+      <DependentUpon>DB_WebBenhVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DB_WebBenhVienDataSet1.xsc">
+      <DependentUpon>DB_WebBenhVienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DB_WebBenhVienDataSet1.xsd" />
+    <None Include="Dataset\DB_WebBenhVienDataSet1.xss">
+      <DependentUpon>DB_WebBenhVienDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport\DanhSachBenhNhanNhapXuatVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DanhSachBenhNhanNhapXuatVien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\Giayravien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Giayravien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\HoSoBenhAn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoSoBenhAn.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49731</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
